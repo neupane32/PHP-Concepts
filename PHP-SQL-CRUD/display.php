@@ -2,7 +2,7 @@
 // Include the database connection file
 include './databaseConnection.php';
 
-//guery to display all the user data
+//query to display all the user data
 $getQuery =  "select * from Users";
 $data = $connection->query($getQuery);
 
