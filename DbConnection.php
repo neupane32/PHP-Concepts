@@ -10,4 +10,6 @@ if($connection->connect_error) {
     die("connection failed:" . $connection->connect_error);
 }
 echo"The database is connected successfully";
+echo"<br>";
 ?>
+
