@@ -24,23 +24,27 @@ $data = $connection->query($getQuery);
             <th>Email</th>
             <th>Address</th>
             <th>Contact</th>
+            <th>Action-Button</th>
         </tr>
 
         <?php
         if($data->num_rows > 0){
-            foreach($data as $student){
+            foreach($data as $user){
                 echo('
                 <tr>
-                 <td>'.$student["id"].'</td>
-                 <td>'.$student["name"].'</td>
-                 <td>'.$student["email"].'</td>
-                 <td>'.$student["address"].'</td>
-                 <td>'.$student["contact"].'</td>
+                 <td>'.$user["id"].'</td>
+                 <td>'.$user["name"].'</td>
+                 <td>'.$user["email"].'</td>
+                 <td>'.$user["address"].'</td>
+                 <td>'.$user["contact"].'</td>
                  <td>
+                 <a href= "edit.php?id='.$user['id'].'">Edit</a> 
+                 <a href= "delete.php?id='.$user['id'].'">Delete</a></td>
                  </tr>
                  ');
             }
         }
+
         ?>
     </table>
  </body>
