@@ -16,7 +16,7 @@ $id = $_POST['id'];
 $updateQuery = "update Users set name='$name', email='$email', address='$address', contact='$contact' where id='$id'";
 
 //execute the query
-if($connection->query($query) == true){
+if($connection->query($updateQuery) == true){
     //echo("Updated successfully");
   header('location:display.php');
 }else{
