@@ -7,7 +7,7 @@ $id = $_GET['id'];
 
 // Update query
 $updateQuery = "SELECT * FROM Users WHERE id='$id'";
-$data = $conn->query($updateQuery);
+$data = $connection->query($updateQuery);
 
 ?>
 
@@ -24,10 +24,10 @@ $data = $conn->query($updateQuery);
         if($data->num_rows > 0){
             $row = $data->fetch_assoc();
     ?>
-    <form action="updateSuccess.php" method="post">
+    <form action="updateDetails.php" method="post">
         <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
         Name: <input type="text" name="fname" value="<?php echo $row['name']; ?>"><br>
-        E-Mail: <input type="email" name="email" value="<?php echo $row['email']; ?>"><br>
+        Email: <input type="email" name="email" value="<?php echo $row['email']; ?>"><br>
         Address: <input type="text" name="address" value="<?php echo $row['address']; ?>"><br>
         Contact: <input type="text" name="contact" value="<?php echo $row['contact']; ?>"><br>
         <button type="submit">Save</button>
