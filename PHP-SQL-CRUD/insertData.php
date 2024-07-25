@@ -1,5 +1,6 @@
 <?php
 include('index.php');
+include('databaseConnection.php');
 
 //get data
 $name = $_POST["name"];
@@ -12,8 +13,8 @@ $query = "INSERT INTO Users (name,email, address, contact) VALUES ('$name','$ema
 
 //execute
 if($connection->query($query) == true){
-    echo("Inserted successfully");
-   //header('location:display.php');
+     //echo("Inserted successfully");
+   header('location:display.php');
 }else{
     echo("Failed to connect");
 }
