@@ -26,7 +26,7 @@ $data = $connection->query($updateQuery);
     ?>
     <form action="updateDetails.php" method="post">
         <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-        Name: <input type="text" name="fname" value="<?php echo $row['name']; ?>"><br>
+        Name: <input type="text" name="name" value="<?php echo $row['name']; ?>"><br>
         Email: <input type="email" name="email" value="<?php echo $row['email']; ?>"><br>
         Address: <input type="text" name="address" value="<?php echo $row['address']; ?>"><br>
         Contact: <input type="text" name="contact" value="<?php echo $row['contact']; ?>"><br>
