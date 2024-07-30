@@ -10,13 +10,6 @@ if($connection->connect_error) {
     die("connection failed:" . $connection->connect_error);
 }
 
-// Create database using SQL query
-// $query = "CREATE DATABASE IF NOT EXISTS `USER-CRUD`";
-// if ($connection->query($query) === TRUE) {
-//     echo "Database created successfully<br>";
-// } else {
-//     echo "Error creating database: " . $connection->error . "<br>";
-// }
 
 // Create table
 $query = "CREATE TABLE IF NOT EXISTS Users (

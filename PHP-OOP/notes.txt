@@ -1,0 +1,8 @@
+PHP-OOP-Concept:
+Object-oriented programming is a programming model organized around Object
+rather than the actions and data rather than logic.
+
+Class: class is an entity or a blueprint that determines how an object
+will behave and what the object will contain
+
+object: An object ia an instance of a class 

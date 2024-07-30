@@ -41,8 +41,9 @@ class Animal {
         echo $this->name;
         echo $this->description;
     }
+
 }
-$Animal = new Animal;
-$Animal->display();
-var_dump($Animal);
+$obj = new Animal;
+$obj->display();
+var_dump($obj);
 ?>
