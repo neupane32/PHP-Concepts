@@ -14,6 +14,6 @@ if($connection->query($deleteQuery) == true){
  }else{
      echo("Failed to delete");
  }
-
-
+ 
+ 
 ?>

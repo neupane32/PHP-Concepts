@@ -19,5 +19,4 @@ if($connection->query($query) == true){
     echo("Failed to connect");
 }
 
-
 ?>
