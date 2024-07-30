@@ -15,3 +15,12 @@ PHP - The __destruct Function
 A destructor is called when the object is destructed or the script is stopped or exited.
 
 If you create a __destruct() function, PHP will automatically call this function at the end of the script.
+
+PHP - Access Modifiers
+Properties and methods can have access modifiers which control where they can be accessed.
+
+There are three access modifiers:
+
+public - the property or method can be accessed from everywhere. This is default
+protected - the property or method can be accessed within the class and by classes derived from that class
+private - the property or method can ONLY be accessed within the class
