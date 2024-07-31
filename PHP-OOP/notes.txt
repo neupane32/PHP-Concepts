@@ -24,3 +24,8 @@ There are three access modifiers:
 public - the property or method can be accessed from everywhere. This is default
 protected - the property or method can be accessed within the class and by classes derived from that class
 private - the property or method can ONLY be accessed within the class
+
+Inheritance: When a existing class has it properties and methods and the new class can used it properties 
+and method uisng extends keyword is know as Inheritance.
+
+final keyword: is used to protect class inheritance and to prevent method overriding.
