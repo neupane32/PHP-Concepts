@@ -29,3 +29,7 @@ Inheritance: When a existing class has it properties and methods and the new cla
 and method uisng extends keyword is know as Inheritance.
 
 final keyword: is used to protect class inheritance and to prevent method overriding.
+
+static Method: 
+Static methods can be called directly - without creating an instance of the class first.
+Static methods are declared with the static keyword:
