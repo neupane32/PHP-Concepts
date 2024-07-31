@@ -53,4 +53,8 @@ Traits:
  Traits are used to declare methods that can be used in multiple classes. 
  Traits can have methods and abstract methods that can be used in multiple classes, and the methods can have any access modifier (public, private, or protected).
 
- Traits are declared with the trait keyword:
+ Traits are declared with the trait keyword.
+
+ Namespace: 
+ A namespace is a way to encapsulate and group related classes, interfaces, functions, and constants together. 
+ It helps to avoid naming conflicts in larger projects where multiple libraries or modules might have the same class or function names.
