@@ -24,3 +24,57 @@ There are three access modifiers:
 public - the property or method can be accessed from everywhere. This is default
 protected - the property or method can be accessed within the class and by classes derived from that class
 private - the property or method can ONLY be accessed within the class
+
+Inheritance: When a existing class has it properties and methods and the new class can used it properties 
+and method uisng extends keyword is know as Inheritance.
+
+final keyword: is used to protect class inheritance and to prevent method overriding.
+
+static Method: 
+Static methods can be called directly - without creating an instance of the class first.
+Static methods are declared with the static keyword:
+
+Abstract class: 
+Abstract classes and methods are when the parent class has a named method, but need its child class(es) to fill out the tasks.
+
+An abstract class is a class that contains at least one abstract method. An abstract method is a method that is declared, but not implemented in the code.
+
+An abstract class or method is defined with the abstract keyword:
+
+Interface: 
+ Interfaces allow you to specify what methods a class should implement.
+ Interfaces make it easy to use a variety of different classes in the same way. 
+ When one or more classes use the same interface, it is referred to as "polymorphism".
+
+Traits:
+ PHP only supports single inheritance: a child class can inherit only from one single parent.
+
+ So, what if a class needs to inherit multiple behaviors? OOP traits solve this problem.
+ Traits are used to declare methods that can be used in multiple classes. 
+ Traits can have methods and abstract methods that can be used in multiple classes, and the methods can have any access modifier (public, private, or protected).
+
+ Traits are declared with the trait keyword.
+
+ Namespace: 
+ A namespace is a way to encapsulate and group related classes, interfaces, functions, and constants together. 
+ It helps to avoid naming conflicts in larger projects where multiple libraries or modules might have the same class or function names.
+
+Magic Method:
+PHP magic methods are special methods in a class. 
+The magic methods override the default actions when the object performs the actions.
+
+__call():	is triggered when invoking an inaccessible instance method
+__callStatic():	is triggered when invoking an inaccessible static method
+__get():	is invoked when reading the value from a non-existing or inaccessible property
+ __set():	is invoked when writing a value to a non-existing or inaccessible property
+ __isset():	is triggered by calling isset() or empty() on a non-existing or inaccessible property
+__unset():	is invoked when unset() is used on a non-existing or inaccessible property.
+__sleep():	The __sleep() commits the pending data
+__wakeup():	is invoked when the unserialize() runs to reconstruct any resource that an object may have.
+__serialize():	The serialize() calls __serialize(), if available, and construct and return an associative array of key/value pairs that represent the serialized form of the object.
+__unserialize():	The unserialize() calls __unserialize(), if avaialble, and restore the properties of the object from the array returned by the __unserialize() method.
+__toString():	is invoked when an object of a class is treated as a string.
+__invoke():	is invoked when an object is called as a function
+__set_state():	is called for a class exported by var_export()
+__clone():	is called once the cloning is complete
+__debugInfo():	is called by var_dump() when dumping an object to get the properties that should be shown.
