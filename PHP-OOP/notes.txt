@@ -40,3 +40,8 @@ Abstract classes and methods are when the parent class has a named method, but n
 An abstract class is a class that contains at least one abstract method. An abstract method is a method that is declared, but not implemented in the code.
 
 An abstract class or method is defined with the abstract keyword:
+
+Interface: 
+ Interfaces allow you to specify what methods a class should implement.
+ Interfaces make it easy to use a variety of different classes in the same way. 
+ When one or more classes use the same interface, it is referred to as "polymorphism".
