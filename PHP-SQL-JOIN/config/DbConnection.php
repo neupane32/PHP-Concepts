@@ -16,6 +16,3 @@ if($conn->connect_error){
 else{
     echo "connected successfully";
 }
-//
-
-?>
